@@ -1,12 +1,57 @@
-.img{
+body{
+  margin: 25px;  
+}
+.contain{
+    display: flex;
+}
+.img img{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-   background-image: url("mountain.jpg");
-   background-size: cover;
-   transition: width 0.2s, height 0.2s, transform 2s;
+   transition:  0.5s;
 }
-.img:hover{
- filter: grayscale(100%);
- transform: rotate(360deg);
+img:hover{
+   filter: opacity(80%);
+ transform: scale(110%);
+}
+.movin{
+    margin-left: 25px;
+    background-color:antiquewhite;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.circle{
+    border-radius: 50%;
+    background-color: brown;
+    height: 25%;
+    width: 25%;
+    position: absolute;
+    animation-name: jholey;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes jholey{
+    0%{ left: 0px; top: 0px;}
+    25%{ left: 0px; top: 200px;}
+    50%{ left: 200px; top: 200px;}
+    75%{ left: 200px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+
+}
+.third{
+    margin-top: 200px;
+    margin-left: 25px;
+    width: 500px;
+    height: 250px;
+    background-image: url("mountain.jpg");
+    background-size: cover;
+    animation: popup 1s ease-out ;
+    animation-fill-mode: forwards;
+}
+@keyframes popup{
+    0%{transform: translateY(-500px);}
+   
 }
