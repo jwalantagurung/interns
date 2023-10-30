@@ -1,0 +1,12 @@
+.img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+   background-image: url("mountain.jpg");
+   background-size: cover;
+   transition: width 0.2s, height 0.2s, transform 2s;
+}
+.img:hover{
+ filter: grayscale(100%);
+ transform: rotate(360deg);
+}

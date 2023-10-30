@@ -1,0 +1,31 @@
+.anim{
+    margin: 20%;
+    
+    padding: 20px;
+    border-radius: 15px 50px 25px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-image: url("https://t3.ftcdn.net/jpg/05/28/81/16/360_F_528811621_o9GqVieGvZoLZVOVrE78guOPWpS09QnM.jpg");
+}
+.move{
+    background-color: azure;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    animation-name:jwalay;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+
+
+}
+@keyframes jwalay{
+    0%{background-color: aqua; left:0px; top:0px;}
+    25%{background-color: bisque;left:0px; top:230px; }
+    50%{background-color: black; left: 200px; top: 230px;}
+    75%{background-color:brown; left: 200px; top:0px;}
+    100%{background-color:burlywood; left:0px; top:0px;}
+}
